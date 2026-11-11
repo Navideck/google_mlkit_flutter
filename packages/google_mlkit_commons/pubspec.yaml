@@ -1,0 +1,29 @@
+name: google_mlkit_commons
+description: "A Flutter plugin with common classes and methods used across Google's standalone ML Kit plugins for mobile platforms."
+version: 1.0.1
+homepage: https://github.com/flutter-ml/google_ml_kit_flutter
+repository: https://github.com/flutter-ml/google_ml_kit_flutter/tree/master/packages/google_mlkit_commons
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.google_mlkit_commons
+        pluginClass: GoogleMlKitCommonsPlugin
+      ios:
+        pluginClass: GoogleMlKitCommonsPlugin
+        swiftPackage:
+          path: ios/google_mlkit_commons
